@@ -1,11 +1,11 @@
-import React from "react";
-import { HomeColumns, HomeHeader, HomeLoginRegister, HomeNavigation } from './';
+import { HomeColumns, HomeHeader, HomeNavigation } from './';
 
 const Home = () => {
     return (
         <div>
+            Home
             <HomeHeader>
-                <HomeLoginRegister></HomeLoginRegister>
+                <Home></Home>
                 <HomeNavigation></HomeNavigation>
             </HomeHeader>
             <HomeColumns>
