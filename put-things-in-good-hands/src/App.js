@@ -1,7 +1,5 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import { Home } from './components';
-import Login from "./components/Login";
-import Register from "./components/Register";
+import { Home, Login, Register  } from './components';
 
 const App = () => (
     <BrowserRouter>

@@ -1,3 +1,4 @@
+export { default as HomeIntro } from "./HomeIntro";
 export { default as Home } from './Home';
 export { default as HomeColumns } from './HomeColumns';
 export { default as HomeHeader } from './HomeHeader';
