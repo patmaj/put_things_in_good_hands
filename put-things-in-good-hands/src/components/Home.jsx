@@ -3,7 +3,6 @@ import { HomeColumns, HomeHeader, HomeNavigation } from './';
 const Home = () => {
     return (
         <div>
-            Home
             <HomeHeader>
                 <Home></Home>
                 <HomeNavigation></HomeNavigation>

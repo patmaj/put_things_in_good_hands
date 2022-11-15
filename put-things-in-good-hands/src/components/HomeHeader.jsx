@@ -1,9 +1,10 @@
 import React from "react";
+import Decoration from '../assets/Decoration.svg';
 import HomeHeroImage from '../assets/Home-Hero-Image.jpg';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 import { Link as RouterLink } from "react-router-dom";
 import { headerData } from "./headerData";
-import Decoration from '../assets/Decoration.svg';
+
 
 const HomeHeader = () => {
     return (

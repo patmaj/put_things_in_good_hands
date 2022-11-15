@@ -1,9 +1,11 @@
 //@import "reset.css";
+@import 'header';
 @import "settings/_fonts.scss";
 @import "settings/_colors.scss";
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
 
 body {
   font-family: $font-base;
+  height: 100vh;
 }
 
