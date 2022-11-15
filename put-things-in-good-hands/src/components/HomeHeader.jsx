@@ -3,6 +3,7 @@ import HomeHeroImage from '../assets/Home-Hero-Image.jpg';
 import { Link } from 'react-scroll'
 import { Link as RouterLink } from "react-router-dom";
 import { headerData } from "./headerData";
+import Decoration from '../assets/Decoration.svg';
 
 const HomeHeader = () => {
     return (
@@ -25,6 +26,14 @@ const HomeHeader = () => {
                             })}
                         </ul>
                     </nav>
+                </div>
+                <div className="header__intro">
+                    <h1>Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
+                    <img className="decor" src={Decoration} alt="" />
+                    <div className="buttons">
+                        <RouterLink className='button' to={'/login'}>ODDAJ RZECZY</RouterLink>
+                        <RouterLink className='button' to={'/login'}>ZORGANIZUJ ZBIÓRKĘ</RouterLink>
+                    </div>
                 </div>
             </div>
         </header>
