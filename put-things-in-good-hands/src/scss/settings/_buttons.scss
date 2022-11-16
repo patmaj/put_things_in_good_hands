@@ -1,0 +1,41 @@
+@import 'colors';
+
+$border: 0.75px solid $color-dark-grey;
+
+.button {
+
+  border: $border;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: none;
+  color: $color-dark-grey;
+  cursor: pointer;
+
+  &--big {
+    width: 207px;
+    padding: 13px 50px;
+    font-size: 36px;
+  }
+
+  &--medium {
+
+    width: 208px;
+    height: 79px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &--small {
+
+    font-size: 18px;
+    padding: 15px 13px;
+
+    &:hover {
+      border: $border;
+    }
+  }
+  &.active{
+    border: $border;
+  }
+}
