@@ -8,10 +8,15 @@ import { headerData } from "./headerData";
 
 const HomeHeader = () => {
     return (
-        <header className='header'>
-            <div className='header__left-column'>
-                <img src={HomeHeroImage} alt=""/>
-            </div>
+        <header className='header' style={{
+            backgroundImage: `url(${HomeHeroImage})`,
+            backgroundSize: "contain",
+            backgroundPosition: "bottom left",
+            backgroundRepeat: "no-repeat"
+        }}>
+            {/*<div className='header__left-column'>*/}
+            {/*    <img src={HomeHeroImage} alt=""/>*/}
+            {/*</div>*/}
             <div className="header__right-column">
                 <div className="header__login">
                     <RouterLink className="header__link" to={'/logowanie'}>Zaloguj</RouterLink>

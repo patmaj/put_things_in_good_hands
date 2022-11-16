@@ -1,13 +1,28 @@
 @import 'reset-css';
-@import "columns";
-@import 'header';
+@import "settings/colors";
 @import "settings/buttons";
 @import "settings/fonts";
-@import "settings/colors";
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+@import "columns";
+@import 'header';
+
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
 
 body {
   font-family: $font-base;
   height: 100vh;
 }
+
 

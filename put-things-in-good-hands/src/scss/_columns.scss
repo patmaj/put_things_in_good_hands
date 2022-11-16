@@ -3,7 +3,7 @@
 .columns {
   display: flex;
   padding: 46px 80px 86px;
-  background-color: $color-yellow;
+  background-image: url("../assets/3 Columns Background.png");
 
   &__item {
     display: flex;
@@ -12,17 +12,35 @@
     text-align: center;
     padding: 0 40px;
   }
+
   &__number {
-    font-size: 90px;
+    font-size: 5.6rem;
     color: $color-brown;
   }
+
   &__title {
-    font-size: 18px;
+    font-size: 1.1rem;
     color: $color-dark-grey;
     padding: 10px 0 28px;
   }
+
   &__content {
-    font-size: 16px;
+    font-size: 1rem;
     color: $color-dark-grey;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .columns  {
+    flex-direction: column;
+
+    &__item {
+      margin-bottom: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .columns  {
+    flex-direction: row;
   }
 }
