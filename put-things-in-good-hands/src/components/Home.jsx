@@ -1,15 +1,18 @@
-import { HomeColumns, HomeHeader, HomeNavigation } from './';
+import { HomeColumns, HomeHeader, HomeSteps, HomeAbout, HomeFundation, HomeContact } from './';
 
 const Home = () => {
     return (
         <div>
-            <HomeHeader>
-                <Home></Home>
-                <HomeNavigation></HomeNavigation>
-            </HomeHeader>
-            <HomeColumns>
-            </HomeColumns>
-
+            <HomeHeader />
+              <main>
+                  <HomeColumns />
+                  <HomeSteps />
+                  <HomeAbout />
+                  <HomeFundation />
+              </main>
+              <footer>
+                  <HomeContact />
+              </footer>
         </div>
     );
 };
