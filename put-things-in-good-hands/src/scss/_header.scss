@@ -1,9 +1,11 @@
+@import "settings/colors";
+
 .header {
   display: flex;
   height: 100vh;
   margin: 142px;
 
-    &__left-column {
+  &__left-column {
       flex: 1;
       position: relative;
 
@@ -14,7 +16,7 @@
         left: -100px;
         object-fit: fill;
       }
-    }
+  }
   &__reight-column {
     flex: 1;
     display: flex;
@@ -29,6 +31,68 @@
         padding: 9px 10px;
         text-decoration: none;
         color: $color-grey;
+
+        &--register {
+          font-size: 13px;
+          border: 0.75 solid $color-yellow;
+        }
+      }
+    }
+
+    .header__menu {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 17px;
+
+      .nav-link {
+        padding: 9px 20px;
+        font-size: 18px;
+        color: $color-dark-grey;
+        cursor: pointer;
+
+        &:first-child {
+          border: 0.75px solid $color-dark-grey;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .header__intro {
+      margin-top: 110px;
+      display: flex;
+      flex-direction: column;
+
+      h1,h2 {
+        font-size: 34px;
+        text-align: center;
+      }
+
+      .decor {
+        width: 253px;
+        height: 53px;
+        margin-top: 25px;
+        align-self: center;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 65px;
+        gap: 44px;
+
+        &__item {
+          width: 207px;
+          border: 0.75px solid $color-dark-grey;
+          font-size: 36px;
+          font-weight: lighter;
+          text-align: center;
+          text-decoration: none;
+          color: $color-dark-grey;
+          padding: 13px 50px;
+        }
       }
     }
   }
