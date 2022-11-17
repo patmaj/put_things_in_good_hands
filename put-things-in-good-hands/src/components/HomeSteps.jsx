@@ -10,33 +10,36 @@ const HomeSteps = () => {
 
     return (
         <section className='steps'>
+
             <h1 className='steps__title'> Wystarczą 4 proste kroki</h1>
             <img className="decor" src={Decoration} alt="" />
+            <div className="steps__items">
             <div className="steps__item">
                 <img className="icon1" src={Icon1} alt="" />
                 <h2 className='steps__subtitle'>Wybierz rzeczy</h2>
                 <div className="steps__line"></div>
-                <h3 className="steps__text">ubrania, zabawki, sprzęt i inne</h3>
+                <h3 className="steps__text">ubrania, zabawki,<br/> sprzęt i inne</h3>
             </div>
             <div className="steps__item">
                 <img className="icon2" src={Icon2} alt="" />
                 <h2 className='steps__subtitle'>Spakuj je</h2>
                 <div className="steps__line"></div>
-                <h3 className="steps__text">skorzystaj z worków na śmieci</h3>
+                <h3 className="steps__text">skorzystaj z<br/> worków na śmieci</h3>
             </div>
             <div className="steps__item">
                 <img className="icon3" src={Icon3} alt="" />
                 <h2 className='steps__subtitle'>Zdecyduj komu chcesz pomóc</h2>
                 <div className="steps__line"></div>
-                <h3 className="steps__text">wybuerz zaufane miejsce</h3>
+                <h3 className="steps__text">wybuerz zaufane<br/> miejsce</h3>
             </div>
             <div className="steps__item">
                 <img className="icon4" src={Icon4} alt="" />
                 <h2 className='steps__subtitle'>Zamów kuriera</h2>
                 <div className="steps__line"></div>
-                <h3 className="steps__text">kurier przyjedzie w dogodnym terminie</h3>
+                <h3 className="steps__text">kurier przyjedzie<br/> w dogodnym terminie</h3>
             </div>
-            <RouterLink className="steps__link" to={'/logowanie'}>ODDAJ RZECZY</RouterLink>
+          </div>
+            <RouterLink className="steps__link steps__button--big" to={'/logowanie'}>ODDAJ RZECZY</RouterLink>
         </section>
     );
 }

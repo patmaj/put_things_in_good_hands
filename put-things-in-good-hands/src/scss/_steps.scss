@@ -1,0 +1,66 @@
+@import "settings/colors";
+@import "settings/buttons";
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 55px;
+
+  &__title {
+    font-size: 38px;
+    margin: 0 0 25px 0;
+  }
+
+  &__decor {
+
+  }
+
+  &__items {
+    width: 100%;
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 75px 0;
+    margin: 34px 0 35px ;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: $color-dark-grey;
+    padding: 8px;
+  }
+
+  &__line {
+    width: 70px;
+    background-color: $color-grey;
+    border: 1px solid $color-grey;
+    margin: 8.5px 0 8.5px 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: $color-dark-grey;
+    margin-bottom: 80px;
+  }
+
+  &__button--big {
+      border: $border;
+      font-weight: lighter;
+      text-align: center;
+      text-decoration: none;
+      color: $color-dark-grey;
+      cursor: pointer;
+      width: 207px;
+      padding: 13px 50px;
+      font-size: 36px;
+  }
+}
