@@ -14,7 +14,7 @@ const HomeAbout = () => {
                 <img src={Signature} alt="" />
             </div>
             <div className="about__right--column">
-                <img src={People} alt="" />
+                <img className='about__img' src={People} alt="" />
             </div>
         </section>
     );
