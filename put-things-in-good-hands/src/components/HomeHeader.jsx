@@ -8,15 +8,16 @@ import { headerData } from "./headerData";
 
 const HomeHeader = () => {
     return (
-        <header className='header' style={{
-            backgroundImage: `url(${HomeHeroImage})`,
-            backgroundSize: "contain",
-            backgroundPosition: "bottom left",
-            backgroundRepeat: "no-repeat"
-        }}>
-            {/*<div className='header__left-column'>*/}
-            {/*    <img src={HomeHeroImage} alt=""/>*/}
-            {/*</div>*/}
+        // <header className='header' style={{
+        //     backgroundImage: `url(${HomeHeroImage})`,
+        //     backgroundSize: "contain",
+        //     backgroundPosition: "bottom left",
+        //     backgroundRepeat: "no-repeat"
+        // }}>
+        <header className='header'>
+            <div className='header__left-column'>
+                <img src={HomeHeroImage} alt=""/>
+            </div>
             <div className="header__right-column">
                 <div className="header__login">
                     <RouterLink className="header__link" to={'/logowanie'}>Zaloguj</RouterLink>
@@ -34,7 +35,7 @@ const HomeHeader = () => {
                     </nav>
                 </div>
                 <div className="header__intro">
-                    <h1>Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
+                    <h1>Zacznij pomagać!<br/> Oddaj niechciane rzeczy w zaufane ręce</h1>
                     <img className="decor" src={Decoration} alt="" />
                     <div className="buttons">
                         <RouterLink className='button' to={'/login'}>ODDAJ RZECZY</RouterLink>
