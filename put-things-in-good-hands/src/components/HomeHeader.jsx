@@ -38,8 +38,8 @@ const HomeHeader = () => {
                     <h1>Zacznij pomagać!<br/> Oddaj niechciane rzeczy w zaufane ręce</h1>
                     <img className="decor" src={Decoration} alt="" />
                     <div className="buttons">
-                        <RouterLink className='button' to={'/login'}>ODDAJ RZECZY</RouterLink>
-                        <RouterLink className='button' to={'/login'}>ZORGANIZUJ ZBIÓRKĘ</RouterLink>
+                        <RouterLink className='buttons__item' to={'/login'}>ODDAJ RZECZY</RouterLink>
+                        <RouterLink className='buttons__item' to={'/login'}>ZORGANIZUJ ZBIÓRKĘ</RouterLink>
                     </div>
                 </div>
             </div>
