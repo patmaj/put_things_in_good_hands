@@ -8,12 +8,6 @@ import { headerData } from "./headerData";
 
 const HomeHeader = () => {
     return (
-        // <header className='header' style={{
-        //     backgroundImage: `url(${HomeHeroImage})`,
-        //     backgroundSize: "contain",
-        //     backgroundPosition: "bottom left",
-        //     backgroundRepeat: "no-repeat"
-        // }}>
         <header className='header'>
             <div className='header__left-column'>
                 <img src={HomeHeroImage} alt=""/>
