@@ -1,4 +1,4 @@
-import { HomeColumns, HomeHeader, HomeSteps, HomeAbout, HomeFundation, HomeContact } from './';
+import { HomeColumns, HomeHeader, HomeSteps, HomeAbout, HomeFoundation, HomeContact } from './';
 
 const Home = () => {
     return (
@@ -8,7 +8,7 @@ const Home = () => {
                   <HomeColumns />
                   <HomeSteps />
                   <HomeAbout />
-                  <HomeFundation />
+                  <HomeFoundation />
               </main>
               <footer>
                   <HomeContact />
