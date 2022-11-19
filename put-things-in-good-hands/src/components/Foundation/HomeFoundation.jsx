@@ -1,13 +1,13 @@
 import Decoration from "../assets/Decoration.svg";
 import React, {useState} from "react";
-import Posts from "./Posts";
-import Pagination from "./Pagination";
+// import Posts from "./Posts";
+// import Pagination from "./Pagination";
 import FoundationButton from "./FoundationButton";
 
 const HomeFoundation = () => {
     const [selected, setSelected] = useState("foundation")
-    const [data, setData] = useState([])
-    const [currentPage, setCurrentPage] = useState(1)
+    // const [data, setData] = useState([])
+    // const [currentPage, setCurrentPage] = useState(1)
 
     const list = [
         {
@@ -29,14 +29,25 @@ const HomeFoundation = () => {
             <h1 className="foundation__title">Komu pomagamy?</h1>
             <img className="decor" src={Decoration} alt="" />
             <div className="foundation_buttons">
-                <button></button>
-                <button></button>
-                <button></button>
+                {list.map(e => {
+                    return (
+                        <>
+                            <FoundationButton
+                                key={e.id}
+                                id={e.id}
+                                title={e.title}
+                                active={selected === e.id}
+                                setSelected={setSelected}
+                                setCurrentPage={setCurrentPage}
+                            />
+                        </>
+                    )
+                })}
             </div>
-            <Posts data={} />
-            <div className="foundation__pagination">
-                <Pagination></Pagination>
-            </div>
+            {/*<Posts data={} />*/}
+            {/*<div className="foundation__pagination">*/}
+            {/*    <Pagination></Pagination>*/}
+            {/*</div>*/}
 
         </section>
     );
