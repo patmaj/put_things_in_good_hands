@@ -1,5 +1,6 @@
 import Decoration from "../assets/Decoration.svg";
 import React, {useEffect, useState} from "react";
+import {foundations, locals, organizations} from "./data";
 import Posts from "./Posts";
 import Pagination from "./Pagination";
 import FoundationButton from "./FoundationButton";
