@@ -1,8 +1,9 @@
-import { HomeColumns, HomeHeader, HomeSteps, HomeAbout, HomeFoundation, HomeContact } from './';
+import { HomeColumns, HomeHeader, HomeSteps, HomeAbout, HomeContact } from './';
+import { HomeFoundation } from "./Foundation/HomeFoundation";
 
 const Home = () => {
     return (
-        <div>
+        <>
             <HomeHeader />
               <main>
                   <HomeColumns />
@@ -13,7 +14,7 @@ const Home = () => {
               <footer>
                   <HomeContact />
               </footer>
-        </div>
+        </>
     );
 };
 

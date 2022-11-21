@@ -1,4 +1,4 @@
-import Decoration from "../assets/Decoration.svg";
+import Decoration from "../../assets/Decoration.svg";
 import React, {useEffect, useState} from "react";
 import {foundations, locals, organizations} from "./data";
 import Posts from "./Posts";
@@ -69,7 +69,7 @@ const HomeFoundation = () => {
                 })}
             </div>
             <Posts data={currentPosts} />
-            <div className="foundation__pagination">
+            <div className="foundation__pagination--container">
                 <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate}/>
             </div>
 

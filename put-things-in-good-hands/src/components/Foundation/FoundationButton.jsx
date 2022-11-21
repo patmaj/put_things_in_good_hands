@@ -1,6 +1,6 @@
 import React from "react";
 
-const FoundationButton = ({id, title, setSelected, setCurrentPage}) => {
+const FoundationButton = ({id, title, active, setSelected, setCurrentPage}) => {
 
      return (
          <button key={id}
