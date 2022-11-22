@@ -66,12 +66,40 @@ export const foundations = [
     },
 ];
 
+
+
+export const organizations = [
+    {
+        id: 1,
+        text:   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\n" +
+            "do eiusmod tempor incididunt ut labore et dolore magna\n" +
+            "aliqua. Ut enim ad minim veniam, quis nostrud exercitation.\n",
+        title: "Organizacja “Lorem Ipsum 1”",
+        subtitle: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+        description: "Egestas, sed, tempus",
+    },
+
+    {
+        id: 2,
+        title: "Organizacja “Lorem Ipsum 2”",
+        subtitle: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+        description: "Ut, aliquam, purus, sit, amet",
+    },
+
+    {
+        id: 3,
+        title: "Organizacja “Lorem Ipsum 3”",
+        subtitle: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+        description: "Egestas, sed, tempus",
+    },
+];
+
 export const locals = [
     {
         id: 1,
         text:   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\n" +
-                "do eiusmod tempor incididunt ut labore et dolore magna\n" +
-                "aliqua. Ut enim ad minim veniam, quis nostrud exercitation.\n",
+            "do eiusmod tempor incididunt ut labore et dolore magna\n" +
+            "aliqua. Ut enim ad minim veniam, quis nostrud exercitation.\n",
         title: "Organizacja “Lorem Ipsum 1”",
         subtitle: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
         description: "Egestas, sed, tempus",
@@ -110,31 +138,5 @@ export const locals = [
         title: "Organizacja “Lorem Ipsum 6",
         subtitle:"Scelerisque in dictum non consectetur a erat nam.",
         description:"Egestas, sed, tempus",
-    },
-];
-
-export const organizations = [
-    {
-        id: 1,
-        text:   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\n" +
-            "do eiusmod tempor incididunt ut labore et dolore magna\n" +
-            "aliqua. Ut enim ad minim veniam, quis nostrud exercitation.\n",
-        title: "Organizacja “Lorem Ipsum 1”",
-        subtitle: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-        description: "Egestas, sed, tempus",
-    },
-
-    {
-        id: 2,
-        title: "Organizacja “Lorem Ipsum 2”",
-        subtitle: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-        description: "Ut, aliquam, purus, sit, amet",
-    },
-
-    {
-        id: 3,
-        title: "Organizacja “Lorem Ipsum 3”",
-        subtitle: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-        description: "Egestas, sed, tempus",
     },
 ];

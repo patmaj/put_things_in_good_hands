@@ -6,7 +6,7 @@ import Pagination from "./Pagination";
 import FoundationButton from "./FoundationButton";
 
 const HomeFoundation = () => {
-    const [selected, setSelected] = useState("foundation");
+    const [selected, setSelected] = useState('foundation', 'organizations', 'local');
     const [data, setData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(3);
@@ -18,7 +18,7 @@ const HomeFoundation = () => {
           title: 'Fundacja',
         },
         {
-            id: 'organiations',
+            id: 'organizations',
             title: 'Organizacjom pozarządowym',
         },
         {
@@ -49,13 +49,13 @@ const HomeFoundation = () => {
     const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
 
     //change page
-    const paginate = (number) => setCurrentPage(number)
+    const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
     return (
-        <section className="foundation">
+        <section className="foundation" id='foundation'>
             <h1 className="foundation__title">Komu pomagamy?</h1>
             <img className="decor" src={Decoration} alt="" />
-            <div className="foundation_buttons">
+            <div className="foundation_buttons-container">
                 {list.map(e => {
                     return (
                         <>
@@ -72,7 +72,7 @@ const HomeFoundation = () => {
                 })}
             </div>
             <Posts data={currentPosts} />
-            <div className="foundation__pagination--container">
+            <div className="foundation__pagination-container">
                 <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate}/>
             </div>
 
