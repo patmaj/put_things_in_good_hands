@@ -1,5 +1,5 @@
 import { HomeColumns, HomeHeader, HomeSteps, HomeAbout, HomeContact } from './';
-import { HomeFoundation } from "./Foundation/HomeFoundation";
+import HomeFoundation from "./Foundation/HomeFoundation";
 
 const Home = () => {
     return (

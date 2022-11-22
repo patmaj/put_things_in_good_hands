@@ -6,7 +6,7 @@ import React from "react";
 const HomeAbout = () => {
 
     return (
-        <section className='about'>
+        <section className='about' id='about'>
             <div className="about__left--column">
                 <h1 className="about__title">O nas</h1>
                 <img className="decor" src={Decoration} alt="" />

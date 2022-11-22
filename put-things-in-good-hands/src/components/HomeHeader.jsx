@@ -8,7 +8,7 @@ import { headerData } from "./headerData";
 
 const HomeHeader = () => {
     return (
-        <header className='header'>
+        <header className='header' id='start'>
             <div className='header__left-column'>
                 <img src={HomeHeroImage} alt=""/>
             </div>

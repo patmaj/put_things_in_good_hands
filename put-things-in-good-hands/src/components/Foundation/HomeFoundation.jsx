@@ -43,10 +43,13 @@ const HomeFoundation = () => {
         }
     }, [selected]);
 
-    //obecna strona
+    //current page
     const indexOfLastPost = currentPage * postsPerPage;
-    const indexOfFirst = indexOfLastPost - postsPerPage;
-    const currentPosts = data/s;oce(indexOfFirstPost, indexOfLastPost);
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+
+    //change page
+    const paginate = (number) => setCurrentPage(number)
 
     return (
         <section className="foundation">

@@ -1,6 +1,6 @@
 const HomeColumns = () => {
     return (
-        <section className="columns">
+        <section className="columns" id='columns'>
             <div className='columns__item'>
                 <h1 className='columns__number'>10</h1>
                 <h2 className='columns__title'>ODDANYCH WORKÓW</h2>

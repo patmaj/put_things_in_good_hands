@@ -9,7 +9,7 @@ import { Link as RouterLink } from "react-router-dom";
 const HomeSteps = () => {
 
     return (
-        <section className='steps'>
+        <section className='steps' id='steps'>
 
             <h1 className='steps__title'> Wystarczą 4 proste kroki</h1>
             <img className="decor" src={Decoration} alt="" />

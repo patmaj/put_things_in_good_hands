@@ -8,8 +8,10 @@ const Pagination = ({postsPerPage, totalPosts, paginate}) => {
       return (
           <div className="foundation__pagination">
               {pageNumbers.map(number => (
-                  <button className="button button--small" key={number}
-                  onClick={() => paginate(number)}>
+                  <button className="button button--small"
+                          key={number}
+                            onClick={() => paginate(number)}
+                  >
                       {number}
                   </button>
               ))}

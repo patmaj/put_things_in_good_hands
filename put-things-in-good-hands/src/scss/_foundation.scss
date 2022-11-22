@@ -1,0 +1,80 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+.foundation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+
+  &__heading {
+    margin: 35px 0 25px;
+    font-size: 38px;
+  }
+
+  &__button-container {
+    margin: 25px 0 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 22px;
+    width: 640px;
+    height: 84px;
+    margin: 20px 0 50px;
+  }
+
+  &__box {
+    width: 80%;
+  }
+
+  &__box-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.75px solid $color-grey;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+  }
+
+  &__box-item {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__title {
+    font-size: 26px;
+    font-family: $font-alt;
+    font-weight: lighter;
+    margin-bottom: 6px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-family: $font-alt;
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  &__description {
+    font-family: $font-alt;
+    font-weight: lighter;
+    align-self: center;
+  }
+
+  &__pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__pagination-container {
+    height: 100px;
+  }
+}
