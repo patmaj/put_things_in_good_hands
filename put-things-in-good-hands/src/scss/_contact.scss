@@ -1,0 +1,23 @@
+.contact {
+  background-image: url("../assets/Background-Contact-Form.jpg");
+  background-size: contain;
+  background-color: #FFFFFFC9;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__container {
+    width: 600px;
+    height: 500px;
+    margin: 150px 300px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    align-self: flex-end;
+  }
+
+
+}
