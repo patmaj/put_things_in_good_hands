@@ -7,3 +7,4 @@ export { default as Register } from './Register';
 export { default as HomeAbout } from './HomeAbout';
 export { default as HomeFoundation } from './Foundation/HomeFoundation';
 export { default as HomeSteps } from './HomeSteps';
+export { default as HomeFooter } from './HomeFooter';

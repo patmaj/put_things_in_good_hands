@@ -16,7 +16,7 @@ export const headerData = [
     },
     {
         title: 'Fundacja i organizacje',
-        path: 'fundacion',
+        path: 'foundation',
         Name: 'nav-link',
     },
     {

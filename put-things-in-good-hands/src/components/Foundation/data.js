@@ -68,7 +68,7 @@ export const foundations = [
 
 
 
-export const organizations = [
+export const locals = [
     {
         id: 1,
         text:   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\n" +
@@ -94,7 +94,7 @@ export const organizations = [
     },
 ];
 
-export const locals = [
+export const organizations = [
     {
         id: 1,
         text:   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\n" +

@@ -1,4 +1,4 @@
-import { HomeColumns, HomeHeader, HomeSteps, HomeAbout, HomeContact } from './';
+import { HomeFooter, HomeColumns, HomeHeader, HomeSteps, HomeAbout, HomeContact } from './';
 import HomeFoundation from "./Foundation/HomeFoundation";
 
 const Home = () => {
@@ -13,6 +13,7 @@ const Home = () => {
               </main>
               <footer>
                   <HomeContact />
+                  <HomeFooter />
               </footer>
         </>
     );

@@ -6,7 +6,7 @@ import Pagination from "./Pagination";
 import FoundationButton from "./FoundationButton";
 
 const HomeFoundation = () => {
-    const [selected, setSelected] = useState('foundation', 'organizations', 'local');
+    const [selected, setSelected] = useState('foundation');
     const [data, setData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(3);
@@ -14,7 +14,7 @@ const HomeFoundation = () => {
 //list for buttons
     const list = [
         {
-          id: 'foundation',
+          id: 'foundations',
           title: 'Fundacja',
         },
         {
@@ -22,7 +22,7 @@ const HomeFoundation = () => {
             title: 'Organizacjom pozarządowym',
         },
         {
-            id: 'local',
+            id: 'locals',
             title: 'Lokalnym zbiórkom',
         },
     ];
