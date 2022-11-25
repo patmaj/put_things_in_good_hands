@@ -11,18 +11,18 @@ const ContactForm = () => {
                 <div className="contact__userinfo">
                     <div className="contact__userinfo-item">
                         <label className="contact__label">Wpisz imię</label>
-                        <input className='contact__input' type="text" name='name' />
+                        <input className='contact__input' type="text" name='name' placeholder='Krzysztof' />
                         <span id='name-error'>Podane imię jest nieprawidłowe!</span>
                     </div>
                     <div className="contact__userinfo-item">
                         <label className="contact__label">Wpisz swój email</label>
-                        <input className='contact__input'  name='email' />
+                        <input className='contact__input'  name='email' placeholder='abc@xyz.pl' />
                         <span id='email-error'>Podany mail jest nieprawidłowy!</span>
                     </div>
                 </div>
                 <div className="contact__msg">
                     <label className="contact__label">Wpisz swoją wiadomość</label>
-                    <textarea  className="contact__textarea" name="message" />
+                    <textarea  className="contact__textarea" name="message" placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
                     <span id='msg-error'> Wiadomość musi mieć conajmniej 120 znaków!</span>
                 </div>
             </div>
