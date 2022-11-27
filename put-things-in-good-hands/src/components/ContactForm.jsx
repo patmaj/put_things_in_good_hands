@@ -18,12 +18,13 @@ const ContactForm = () => {
         setIsSubmit(true);
     };
 
+
+
     useEffect(()=> {
         if (Object.keys(formErrors).length === 0 && isSubmit) {
             fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
                 method: 'POST',
                 headers: {
-                    // 'Accept': 'application/json',
                     'Content-type': 'application/json'
                 },
                 body: JSON.stringify(formValues)
@@ -32,7 +33,9 @@ const ContactForm = () => {
                 .then(data => console.log(data))
                 .catch(err => console.log(err));
         }
-    }, [isSubmit])
+    }, [isSubmit]);
+
+
 
     const validate = (values) => {
         const errors = {};
