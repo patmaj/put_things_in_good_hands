@@ -1,8 +1,14 @@
+import HeaderLoginRegister from "./HeaderLoginRegister";
+import HeaderNavbar from "./HeaderNavbar";
+
 const Login = () => {
     return (
-        <div>
-
-        </div>
+        <section className="login">
+          <div className="header__right--column">
+              <HeaderLoginRegister />
+              <HeaderNavbar />
+          </div>
+        </section>
     );
 };
 
