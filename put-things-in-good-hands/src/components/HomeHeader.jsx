@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 import { Link as RouterLink } from "react-router-dom";
 import { headerData } from "./headerData";
 import HeaderLoginRegister from "./HeaderLoginRegister";
+import HeaderNavbar from "./HeaderNavbar";
 
 
 const HomeHeader = () => {
@@ -15,17 +16,7 @@ const HomeHeader = () => {
             </div>
             <div className="header__right-column">
               <HeaderLoginRegister />
-                <div className="header__menu">
-                    <nav>
-                        <ul className='manu-list'>
-                            {headerData.map((e,i) => {
-                                return (
-                                    <Link className={e.Name} key={i} to={`${e.path}`} spy={true} smooth={true}>{e.title}</Link>
-                                )
-                            })}
-                        </ul>
-                    </nav>
-                </div>
+              <HeaderNavbar />
                 <div className="header__intro">
                     <h1>Zacznij pomagać!<br/> Oddaj niechciane rzeczy w zaufane ręce</h1>
                     <img className="decor" src={Decoration} alt="" />
