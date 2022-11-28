@@ -61,7 +61,7 @@ const ContactForm = () => {
     return (
         <div className="contact__container">
             <h1 className="contact__title">Skontaktuj się z nami</h1>
-            <img src={Decoration} alt="" className="contact__decor"/>
+            <img src={Decoration}  className="contact__decor" alt=""/>
             {Object.keys(formErrors).length === 0 && isSubmit &&
                 <span className="contact__success">Wiadomość została wysłana! <br/> Wkrótce się skontaktujemy</span>}
             <form className="contact__form" onSubmit={handleSubmit}>
