@@ -39,7 +39,7 @@ const ContactForm = () => {
                 .then(data => console.log(data))
                 .catch(error => console.log(error));
         }
-    }, [isSubmit]);
+    }, [formValues, formErrors, isSubmit]);
 
 
 
