@@ -29,9 +29,15 @@ const ContactForm = () => {
                 },
                 body: JSON.stringify(formValues)
             })
-                .then(res => res.json())
+                .then(res => {if (res.ok) {
+                    return res.json()
+                } else {
+                    return Promise.reject(`Http error: ${res.status}`);
+                    //throw new Error(`Http error: ${res.status}`);
+                }
+                })
                 .then(data => console.log(data))
-                .catch(err => console.log(err));
+                .catch(error => console.log(error));
         }
     }, [isSubmit]);
 
