@@ -70,7 +70,7 @@ const Login = () => {
                       </div>
                   </div>
                  </div>
-                  <div className="login__buttoms-container">
+                  <div className="login__buttons-container">
                       <button className="button--small" disabled={true}>Załóż konto</button>
                       <button className="button--small active" type="submit">Zaloguj się</button>
                   </div>
