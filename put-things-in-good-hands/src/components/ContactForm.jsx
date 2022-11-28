@@ -57,7 +57,7 @@ const ContactForm = () => {
             <h1 className="contact__title">Skontaktuj się z nami</h1>
             <img src={Decoration} alt="" className="contact__decor"/>
             {Object.keys(formErrors).length === 0 && isSubmit &&
-                <p className="contact__success">Wiadomość została wysłana! <br/> Wkrótce się skontaktujemy</p>}
+                <span className="contact__success">Wiadomość została wysłana! <br/> Wkrótce się skontaktujemy</span>}
             <form className="contact__form" onSubmit={handleSubmit}>
                 <div className="contact__form-container">
                     <div className="contact__userinfo">
