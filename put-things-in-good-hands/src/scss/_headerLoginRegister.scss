@@ -1,0 +1,17 @@
+
+.header__login {
+  align-self: flex-end;
+  margin: 37px 0 17px 0;
+
+  .header__link {
+    font-size: 14px;
+    padding: 9px 10px;
+    text-decoration: none;
+    color: $color-grey;
+
+    &--register {
+      font-size: 13px;
+      border: 0.75px solid $color-yellow;
+    }
+  }
+}
