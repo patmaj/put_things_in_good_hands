@@ -1,7 +1,8 @@
 import HeaderLoginRegister from "./HeaderLoginRegister";
 import HeaderNavbar from "./HeaderNavbar";
 import Decoration from "../assets/Decoration.svg";
-import {useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
+import {Link as RouterLink} from "react-router-dom";
 
 const Login = () => {
     const [formValues, setFormValues] = useState({email: "", password:""});
@@ -71,8 +72,8 @@ const Login = () => {
                   </div>
                  </div>
                   <div className="login__buttons-container">
-                      <button className="button--small" disabled={true}>Załóż konto</button>
-                      <button className="button--small active" type="submit">Zaloguj się</button>
+                      <RouterLink className="button" to={'/rejestracja'}>Załóż konto</RouterLink>
+                      <button className="button" type="submit">Zaloguj się</button>
                   </div>
               </form>
           </div>
