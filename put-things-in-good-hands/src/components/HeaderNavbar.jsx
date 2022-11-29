@@ -6,7 +6,7 @@ const HeaderNavbar = () => {
     return (
         <div className="header__menu">
             <nav>
-                <ul className='manu-list'>
+                <ul className='manu__list'>
                     {headerData.map((e,i) => {
                         return (
                             <Link className={e.Name} key={i} to={`${e.path}`} spy={true} smooth={true}>{e.title}</Link>
