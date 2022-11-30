@@ -57,16 +57,16 @@ const Register = () => {
 
     return (
         <div>
-            <section className="register">
+            <section className="login">
                 <div className="header__right--column">
                     <HeaderLoginRegister />
                     <HeaderNavbar />
                 </div>
-                <div className="register__container">
-                    <h1 className="register__title">Załóż konto</h1>
+                <div className="login__container">
+                    <h1 className="login__title">Załóż konto</h1>
                     <img src={Decoration}  className="contact__decor" alt=""/>
-                    <form className="register__form" onSubmit={handleSubmit}>
-                        <div className="register__form-container">
+                    <form className="login__form" onSubmit={handleSubmit}>
+                        <div className="login__form-container">
                             <div className="login__userinfo">
                                 <div className="login__userinfo-item">
                                     <label className="login__label">Email</label>
